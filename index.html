@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Портфолио</title>
+  <link rel="icon" href="./img/icons/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css">
+  <link rel="stylesheet" href="./styles/main.css">
+</head>
+
+<body>
+  <div class="wrapper">
+    <div class="maincontent">
+      <header class="header">
+        <div class="header__container">
+          <a href="/" class="logo">
+            <svg class="logo__img">
+              <use xlink:href="./img/icons/sprite.svg#logo"></use>
+            </svg>
+          </a>
+
+          <nav class="menu">
+            <ul class="menu__list">
+              <li class="menu__item"><a href="#portfolio" class="menu__nav">&#128640; Портфолио</a></li>
+              <li class="menu__item"><a href="#about" class="menu__nav">&#127756; Обо мне</a></li>
+              <li class="menu__item"><a href="#skills" class="menu__nav">&#10024; Навыки</a></li>
+              <li class="menu__item"><a href="#achievement" class="menu__nav">&#128302; Ачивки</a></li>
+              <li class="menu__item"><a href="#contacts" class="menu__nav">&#128125; Контакты</a></li>
+            </ul>
+          </nav>
+
+          <a href="#" class="hamburger">
+            <span class="hamburger__button hamburger__button-svg"></span>
+          </a>
+
+        </div>
+      </header>
+
+      <section class="section video">
+        <div class="container video__container">
+          <div class="video__text video__text--top">'hello'</div>
+          <video autoplay loop muted class="video__content">
+            <source src="./video/nyan_cat.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"' />
+          </video>
+
+          <div class="video__content-gif">
+            <img src="./video/nyan_cat.gif" class="video__content-img" alt="nyan cat">
+          </div>
+          <div class="video__text video__text--bottom">'world'</div>
+        </div>
+      </section>
+
+      <section class="section portfolio" id="portfolio">
+        <div class="container portfolio__container">
+          <h1 class="title title--portfolio">Портфолио</h1>
+
+          <ul class="portfolio__list">
+            <li class="portfolio__item">
+              <a href="https://tlenchik.github.io/surfboard/src/" target="_blank">
+                <img src="./img/surfboard.png" class="portfolio__item-img" alt="surfboard">
+              </a>
+              <div class="portfolio__content">
+                <div class="portfolio__content-header">
+                  <a href="https://tlenchik.github.io/surfboard/src/" target="_blank">
+                    <h3 class="portfolio__header">Surfboard</h3>
+                  </a>
+                  <a href="https://github.com/tlenchik/surfboard" target="_blank">
+                    <img src="./img/icons/git.png" class="portfolio__content-header-img" alt="octocat">
+                  </a>
+                </div>
+
+                <div class="portfolio__stack">
+                  <svg class="portfolio__stack-icon">
+                    <use xlink:href="./img/icons/sprite.svg#html5"></use>
+                  </svg>
+
+                  <svg class="portfolio__stack-icon">
+                    <use xlink:href="./img/icons/sprite.svg#css3"></use>
+                  </svg>
+
+                  <svg class="portfolio__stack-icon">
+                    <use xlink:href="./img/icons/sprite.svg#bem"></use>
+                  </svg>
+
+                  <svg class="portfolio__stack-icon portfolio__stack-icon--scss">
+                    <use xlink:href="./img/icons/sprite.svg#scss"></use>
+                  </svg>
+
+                  <svg class="portfolio__stack-icon portfolio__stack-icon--flex">
+                    <use xlink:href="./img/icons/sprite.svg#flex"></use>
+                  </svg>
+
+                  <svg class="portfolio__stack-icon portfolio__stack-icon--adaptive">
+                    <use xlink:href="./img/icons/sprite.svg#adaptive"></use>
+                  </svg>
+
+                  <svg class="portfolio__stack-icon">
+                    <use xlink:href="./img/icons/sprite.svg#js"></use>
+                  </svg>
+
+                  <svg class="portfolio__stack-icon portfolio__stack-icon--jq">
+                    <use xlink:href="./img/icons/sprite.svg#jquery"></use>
+                  </svg>
+
+                  <svg class="portfolio__stack-icon">
+                    <use xlink:href="./img/icons/sprite.svg#npm"></use>
+                  </svg>
+
+                  <svg class="portfolio__stack-icon">
+                    <use xlink:href="./img/icons/sprite.svg#gulp"></use>
+                  </svg>
+
+                  <svg class="portfolio__stack-icon portfolio__stack-icon--console">
+                    <use xlink:href="./img/icons/sprite.svg#console"></use>
+                  </svg>
+
+                  <svg class="portfolio__stack-icon">
+                    <use xlink:href="./img/icons/sprite.svg#git"></use>
+                  </svg>
+
+                  <svg class="portfolio__stack-icon">
+                    <use xlink:href="./img/icons/sprite.svg#github"></use>
+                  </svg>
+
+                  <svg class="portfolio__stack-icon portfolio__stack-icon--yamaps">
+                    <use xlink:href="./img/icons/sprite.svg#yamaps"></use>
+                  </svg>
+
+                  <svg class="portfolio__stack-icon">
+                    <use xlink:href="./img/icons/sprite.svg#svg"></use>
+                  </svg>
+
+                  <svg class="portfolio__stack-icon">
+                    <use xlink:href="./img/icons/sprite.svg#figma"></use>
+                  </svg>
+                </div>
+              </div>
+            </li>
+
+            <li class="portfolio__item">
+              <a href="https://tlenchik.github.io/air-asia/" target="_blank">
+                <img src="./img/airasia.png" class="portfolio__item-img" alt="air asia">
+              </a>
+              <div class="portfolio__content">
+                <div class="portfolio__content-header">
+                  <a href="https://tlenchik.github.io/air-asia/" target="_blank">
+                    <h3 class="portfolio__header">AirAsia</h3>
+                  </a>
+                  <a href="https://github.com/tlenchik/air-asia" target="_blank">
+                    <img src="./img/icons/git.png" class="portfolio__content-header-img" alt="octocat">
+                  </a>
+                </div>
+                <div class="portfolio__stack">
+                  <svg class="portfolio__stack-icon">
+                    <use xlink:href="./img/icons/sprite.svg#html5"></use>
+                  </svg>
+
+                  <svg class="portfolio__stack-icon">
+                    <use xlink:href="./img/icons/sprite.svg#css3"></use>
+                  </svg>
+
+                  <svg class="portfolio__stack-icon">
+                    <use xlink:href="./img/icons/sprite.svg#bem"></use>
+                  </svg>
+
+                  <svg class="portfolio__stack-icon portfolio__stack-icon--flex">
+                    <use xlink:href="./img/icons/sprite.svg#flex"></use>
+                  </svg>
+
+                  <svg class="portfolio__stack-icon">
+                    <use xlink:href="./img/icons/sprite.svg#github"></use>
+                  </svg>
+
+                  <svg class="portfolio__stack-icon">
+                    <use xlink:href="./img/icons/sprite.svg#figma"></use>
+                  </svg>
+                </div>
+              </div>
+            </li>
+
+            <li class="portfolio__item">
+              <a href="https://tlenchik.github.io/geo-review/dist/index.html" target="_blank">
+                <img src="./img/yamaps.png" class="portfolio__item-img" alt="yandex map">
+              </a>
+              <div class="portfolio__content">
+                <div class="portfolio__content-header">
+                  <a href="https://tlenchik.github.io/geo-review/dist/index.html" target="_blank">
+                    <h3 class="portfolio__header">Yandex.Maps API</h3>
+                  </a>
+                  <a href="https://github.com/tlenchik/geo-review" target="_blank">
+                    <img src="./img/icons/git.png" class="portfolio__content-header-img" alt="octocat">
+                  </a>
+                </div>
+                <div class="portfolio__stack">
+                  <svg class="portfolio__stack-icon">
+                    <use xlink:href="./img/icons/sprite.svg#html5"></use>
+                  </svg>
+
+                  <svg class="portfolio__stack-icon">
+                    <use xlink:href="./img/icons/sprite.svg#css3"></use>
+                  </svg>
+
+                  <svg class="portfolio__stack-icon">
+                    <use xlink:href="./img/icons/sprite.svg#js"></use>
+                  </svg>
+
+                  <svg class="portfolio__stack-icon portfolio__stack-icon--flex">
+                    <use xlink:href="./img/icons/sprite.svg#webpack"></use>
+                  </svg>
+
+                  <svg class="portfolio__stack-icon">
+                    <use xlink:href="./img/icons/sprite.svg#github"></use>
+                  </svg>
+
+                  <svg class="portfolio__stack-icon">
+                    <use xlink:href="./img/icons/sprite.svg#git"></use>
+                  </svg>
+
+                  <svg class="portfolio__stack-icon portfolio__stack-icon--yamaps">
+                    <use xlink:href="./img/icons/sprite.svg#yamaps"></use>
+                  </svg>
+
+                  <svg class="portfolio__stack-icon">
+                    <use xlink:href="./img/icons/sprite.svg#figma"></use>
+                  </svg>
+                </div>
+              </div>
+            </li>
+
+            <li class="portfolio__item">
+              <a href="https://glassceramics.ru/" target="_blank">
+                <img src="./img/glassceramics.png" class="portfolio__item-img" alt="glassceramics">
+              </a>
+              <div class="portfolio__content">
+                <div class="portfolio__content-header">
+                  <h3 class="portfolio__header">
+                    <a href="https://glassceramics.ru/" target="_blank">GlassCeramics</a>
+                  </h3>
+                  <img src="./img/icons/info.png"
+                    class="portfolio__content-header-img" alt="info">
+
+                  <div class="dropdown">
+                    <ul class="dropdown__list">
+                      <li class="dropdown__item">
+                        Старый проект (2017), сделан без всяких правил и знаний (помогал Google), не по стандартам и с
+                        ноткой хаоса&#128679; Просто в качестве демонстрации работы с Bootstrap.
+                      </li>
+                    </ul>
+                  </div>
+
+                </div>
+                <div class="portfolio__stack">
+                  <svg class="portfolio__stack-icon">
+                    <use xlink:href="./img/icons/sprite.svg#html5"></use>
+                  </svg>
+
+                  <svg class="portfolio__stack-icon">
+                    <use xlink:href="./img/icons/sprite.svg#css3"></use>
+                  </svg>
+
+                  <svg class="portfolio__stack-icon">
+                    <use xlink:href="./img/icons/sprite.svg#bootstrap"></use>
+                  </svg>
+
+                  <svg class="portfolio__stack-icon portfolio__stack-icon--adaptive">
+                    <use xlink:href="./img/icons/sprite.svg#adaptive"></use>
+                  </svg>
+
+                  <svg class="portfolio__stack-icon">
+                    <use xlink:href="./img/icons/sprite.svg#google-maps"></use>
+                  </svg>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="section about" id="about">
+        <div class="satellite satellite--adaptive">
+          <svg class="satellite__icon">
+            <use xlink:href="./img/icons/sprite.svg#satellite"></use>
+          </svg>
+        </div>
+        <div class="container about__container">
+          <h1 class="title title--chick">Обо мне</h1>
+          <div class="about__content">
+            <img src="./img/me.JPG" class="about__content-foto" alt="tlenchik">
+            <article class="about__text">
+              <p>Привет!&#128522; Меня зовут Елена и я начинаю свой путь в веб-разработке!&#128126;</p><br>
+
+              <p>&#127891; В 2014 году я закончила обучение в <a href="https://www.npi-tu.ru/" class="link"
+                  target="_blank">ЮРГПУ (НПИ)
+                  имени М.И.Платова</a>, по специальности «Информационные системы и технологии» факультета <a
+                  href="https://www.npi-tu.ru/university/faculty/fitu/" class="link" target="_blank">информационных
+                  технологий и управления</a>.</p><br>
+
+              <p>&#128270; 7 лет работала SEO-специалистом: прошла путь от новичка до профессионала. Но у меня всегда
+                была
+                мечта – стать Frontend-разработчиком. А теперь она превратилась в цель.</p><br>
+
+              <p>&#128187; В 2022 году прошла обучение в <a href="https://loftschool.com/" class="link"
+                  target="_blank">LoftSchool</a>
+                по специальности <a href="https://loftschool.com/professions/web-developer/" class="link"
+                  target="_blank">«Веб-разработчик»</a>. В течение 6 месяцев изучила большое количество технологий: от
+                основ
+                вёрстки до разработки приложений на JavaScript.</p><br>
+
+              <p>&#128029; Готова трудиться не покладая рук, изучать новые технологии, развиваться и оттачивать
+                имеющиеся
+                навыки. За годы обучения и работы в смежной сфере поняла, что веб-разработка – это именно то, чем я хочу
+                заниматься и получать от этого удовольствие!&#127774;</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <div class="satellite">
+        <svg class="satellite__icon">
+          <use xlink:href="./img/icons/sprite.svg#satellite"></use>
+        </svg>
+      </div>
+
+      <section class="section skills" id="skills">
+        <div class="container skills__container">
+          <h1 class="title title--skills">Навыки</h1>
+          <ul class="skills__list">
+            <li class="skills__item">
+              <p class="skills__terminal">tlenchik@mad-skills</p>
+              <p>$ HTML5/CSS3</p>
+              <p>$ БЭМ</p>
+              <p>$ Flexbox</p>
+              <p>$ SCSS/SASS</p>
+              <p>$ Работа с макетами в Figma, SVG</p>
+              <p>$ PerfectPixel</p>
+              <p>$ Кроссбраузерная и адаптивная верстка</p>
+              <p>$ Bootstrap</p>
+              <p>$ Gulp, Webpack, NPM</p>
+              <p>$ Git и GitHub Pages</p>
+              <p>$ Ajax</p>
+              <p>$ JavaScript (ES6+)</p>
+              <p>$ jQuery</p>
+              <p>$ WebSockets</p>
+              <p>$ API Яндекс Карт</p>
+            </li>
+
+            <li class="skills__item">
+              <p class="skills__terminal skills__terminal--white">&#8987; В процессе:</p>
+              <p class="skills__items">_ Много практики и более детальное изучение JavaScript</p>
+              <p>_ Наработка скорости в вёрстке</p><br>
+              <p class="skills__terminal skills__terminal--white">&#128173; В планах:</p>
+              <p>_ Изучение Vue.js (или же того фреймворка, который потребуется при трудоустройстве): <a
+                  href="https://loftschool.com/course/web-development/" class="link" target="_blank">прохождение
+                  интенсива</a> и <a href="https://www.youtube.com/playlist?list=PLvTBThJr861yMBhpKafII3HZLAYujuNWw"
+                  class="link" target="_blank">самостоятельное обучение</a></p>
+            </li>
+
+          </ul>
+        </div>
+      </section>
+
+      <section class="achievement" id="achievement">
+        <div class="achievement__container">
+          <h1 class="title title--bee">Ачивки</h1>
+          <div class="achievement__content">
+            <div class="owl-carousel">
+              <div><img src="./img/achievs/pro.jpg" class="owl-carousel-img" alt="webdev"></div>
+              <div><img src="./img/achievs/layout.jpg" class="owl-carousel-img" alt="layout"></div>
+              <div><img src="./img/achievs/web.jpg" class="owl-carousel-img" alt="web"></div>
+              <div><img src="./img/achievs/js.jpg" class="owl-carousel-img" alt="js"></div>
+              <div><img src="./img/achievs/html.jpg" class="owl-carousel-img" alt="html"></div>
+              <div><img src="./img/achievs/git.png" class="owl-carousel-img" alt="git"></div>
+              <div><img src="./img/achievs/npm.png" class="owl-carousel-img" alt="npm"></div>
+            </div>
+            <div class="myNav"></div>
+          </div>
+      </section>
+
+      <section class="section contacts" id="contacts">
+        <div class="container contacts__container">
+          <h1 class="title title--galaxy">Контакты</h1>
+          <div class="contacts__content">
+            <img src="./img/octo-cute.png" class="contacts__img" alt="octo-cute">
+
+            <ul class="contacts__items">
+              <li class="contacts__item">&#127969; Краснодар</li>
+
+              <li class="contacts__item">
+                <a href="https://github.com/tlenchik" class="contacts__link" target="_blank">&#128049;
+                  github</a>
+              </li>
+
+              <li class="contacts__item">
+                <a href="https://career.habr.com/elena_sobol" class="contacts__link" target="_blank">&#129412;
+                  career.habr.com</a>
+              </li>
+
+              <li class="contacts__item">
+                <a href="https://krasnodar.hh.ru/resume/575c183bff0b08ca090039ed1f345779634970" class="contacts__link"
+                  target="_blank">&#129428; hh.ru</a>
+              </li>
+
+              <li class="contacts__item">
+                <a href="https://t.me/tlenchiik" class="contacts__link" target="_blank">&#128037;
+                  telegram</a>
+              </li>
+
+              <li class="contacts__item">
+                <a href="https://vk.com/tlenchiik" class="contacts__link" target="_blank">&#129430;
+                  vk</a>
+              </li>
+
+              <li class="contacts__item">
+                <a href="mailto:tlen.chik.hi@gmail.com" class="contacts__link" target="_blank">&#128236;
+                  tlen.chik.hi@gmail.com</a>
+              </li>
+            </ul>
+          </div>
+
+          <form class="form" autocomplete="off">
+            <div class="form__row">
+              <input type="text" name="name" placeholder="Имя" class="form__input">
+              <input type="email" name="email" placeholder="E-mail" class="form__input">
+            </div>
+            <div class="form__row">
+              <textarea placeholder="( ˙꒳​˙ )" name="comment" class="form__input form__input--textarea"></textarea>
+            </div>
+            <div class="form__btns">
+              <button type="reset" class="btn">Очистить</button>
+              <button type="submit" class="btn">Отправить</button>
+            </div>
+          </form>
+        </div>
+      </section>
+
+      <div class="space">
+        <div class="space__stars"></div>
+      </div>
+
+    </div>
+
+    <div class="button button__svg"></div>
+
+    <footer class="footer">
+      <div class="footer__container">
+        <div class="footer__content">
+          <p>(ﾉ◕ヮ◕)ﾉ*:･ﾟ✧</p>
+          <p>в разработку - по любви &#128156;</p>
+        </div>
+
+        <ul class="social">
+          <li class="social__item">
+            <a href="https://github.com/tlenchik" class="social__link">
+              <svg class="github">
+                <use xlink:href="./img/icons/sprite.svg#github"></use>
+              </svg>
+            </a>
+          </li>
+
+          <li class="social__item">
+            <a href="https://career.habr.com/elena_sobol" class="social__link">
+              <svg class="habr">
+                <use xlink:href="./img/icons/sprite.svg#habr"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social__item">
+            <a href="https://krasnodar.hh.ru/resume/575c183bff0b08ca090039ed1f345779634970" class="social__link">
+              <img src="./img/icons/hh.png" class="hh" alt="hh">
+            </a>
+          </li>
+          <li class="social__item">
+            <a href="https://t.me/tlenchiik" class="social__link">
+              <svg class="tg">
+                <use xlink:href="./img/icons/sprite.svg#tg"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social__item">
+            <a href="https://vk.com/tlenchiik" class="social__link">
+              <svg class="vk">
+                <use xlink:href="./img/icons/sprite.svg#vk"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+  </div>
+
+  <div class="burger-menu">
+    <a href="#" class="burger-menu__close">
+      <span class="burger-menu__egg burger-menu__close-img"></span>
+    </a>
+
+    <nav class="burger-menu__nav">
+      <ul class="burger-menu__list">
+        <li class="burger-menu__item"><a href="#portfolio" class="burger-menu__link">&#128640; Портфолио</a></li>
+        <li class="burger-menu__item"><a href="#about" class="burger-menu__link">&#127756; Обо мне</a></li>
+        <li class="burger-menu__item"><a href="#skills" class="burger-menu__link">&#10024; Навыки</a></li>
+        <li class="burger-menu__item"><a href="#achievement" class="burger-menu__link">&#128302; Ачивки</a></li>
+        <li class="burger-menu__item"><a href="#contacts" class="burger-menu__link">&#128125; Контакты</a></li>
+      </ul>
+    </nav>
+  </div>
+
+  <div class="modal" id="modal">
+    <div class="modal__container">
+      <div class="modal__content">Вжух!&#127881; Сообщение отправлено!:3 </div>
+      <div class="modal__button">
+        <a href="#" class="btn app-submit-btn">Закрыть</a>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+  <script src="./scripts/owl.carousel.min.js"></script>
+  <script src="./scripts/carousel.js"></script>
+  <script src="./scripts/modal.js"></script>
+  <script src="./scripts/menu.js"></script>
+  <script src="./scripts/burger.js"></script>
+  <script src="./scripts/button-top.js"></script>
+</body>

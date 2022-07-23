@@ -1,0 +1,14 @@
+.link {
+  color: $azure;
+  cursor: pointer;
+  text-decoration: none;
+  transition: 0.3s all;
+
+    &:hover {
+      color: $raspberry;
+    }
+
+    &--white {
+      color: #fff;
+    }
+}

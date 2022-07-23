@@ -1,0 +1,57 @@
+.about {
+
+    @include large-tablets {
+      position: relative;
+      margin-top: 60px;
+    }
+
+    @include tablets {
+      margin-top: 90px;
+    }
+}
+
+.about__content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+
+    @include large-tablets {
+      flex-wrap: wrap;
+      padding-right: 35px;
+      padding-left: 35px;
+    }
+}
+
+.about__content-foto {
+  border: 5px dotted;
+  border-color: $violet $raspberry $azure $grey;
+  max-width: 360px;
+  z-index: 2;
+  border-radius: 30%;
+  margin-right: 55px;
+
+    @include large-tablets {
+      max-width: 280px;
+      margin-bottom: 47px;
+      margin-right: 0;
+    }
+
+    @include phones {
+      max-width: 220px;
+    }
+}
+
+.about__text {
+  text-align: justify;
+  font-size: 18px;
+  z-index: 2;
+
+    @include large-tablets {
+      font-size: 16px;
+    }
+
+    @include phones {
+      font-size: 14px;
+    }
+}

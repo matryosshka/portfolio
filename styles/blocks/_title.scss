@@ -1,0 +1,103 @@
+.title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+  font-size: 37px;
+  text-align: center;
+  padding-bottom: 50px;
+
+    @include large-tablets {
+      font-size: 33px;
+    }
+
+    @include phones {
+      font-size: 30px;
+    }
+
+    @include small-phones {
+      font-size: 29px;
+    }
+}
+
+.title--portfolio {
+
+    &:after {
+      content: "";
+      background: url('../img/icons/pickaxe.png') no-repeat;
+      margin-left: 8px;
+      background-size: 90%;
+      margin-top: 20px;
+      width:60px;
+      height: 60px;
+
+        @include phones {
+          background-size: 80%;
+        }
+    }
+}
+
+.title--chick {
+
+    &:before {
+      content: "";
+      background: url('../img/icons/chick.svg') no-repeat;
+      margin-right: 11px;
+      width:60px;
+      height: 60px;
+
+        @include phones {
+          width: 55px;
+          height: 55px;
+        }
+    }
+}
+
+.title--bee {
+  
+    &:after {
+      content: "";
+      background: url('../img/icons/bee.svg') no-repeat;
+      margin-left: 11px;
+      width:60px;
+      height: 60px;
+
+        @include phones {
+          width: 55px;
+          height: 55px;
+        }
+    }
+}
+
+.title--skills {
+  margin-bottom: 10px;
+  
+    &:after {
+      content: "";
+      background: url('../img/icons/mouse.svg') no-repeat;
+      margin-left: 11px;
+      width:55px;
+      height: 55px;
+
+        @include phones {
+          width: 50px;
+          height: 50px;
+        }
+    }
+}
+
+.title--galaxy {
+  
+    &:before {
+      content: "";
+      background: url('../img/icons/galaxy.svg') no-repeat;
+      margin-right: 20px;
+      width:55px;
+      height: 55px;
+
+        @include phones {
+          width: 50px;
+          height: 50px;
+        }
+    }
+}

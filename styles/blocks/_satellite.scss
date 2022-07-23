@@ -1,0 +1,53 @@
+.satellite {
+  display: block;
+
+    @include large-tablets {
+      display: none;
+    }
+
+	-webkit-animation: rotate-center 40s ease-out infinite alternate both;
+	        animation: rotate-center 40s ease-out infinite alternate both;
+
+    @include large-tablets {
+      -webkit-animation: rotate-center 8s ease-out infinite alternate both;
+      animation: rotate-center 8s ease-out infinite alternate both;
+    }
+    
+}
+
+.satellite--adaptive {
+  display: none;
+  
+    @include large-tablets {
+      display: block;
+      position: absolute;
+      top: 3%;
+      left: 78%;
+    }
+}
+
+.satellite__icon {
+  width: 65px;
+  height: 65px;
+}
+
+  @-webkit-keyframes rotate-center {
+    0% {
+      -webkit-transform: rotate(0);
+              transform: rotate(0);
+    }
+    100% {
+      -webkit-transform: rotate(180deg);
+              transform: rotate(180deg);
+    }
+  }
+  @keyframes rotate-center {
+    0% {
+      -webkit-transform: rotate(0);
+              transform: rotate(0);
+    }
+    100% {
+      -webkit-transform: rotate(180deg);
+              transform: rotate(180deg);
+    }
+}

@@ -1,0 +1,169 @@
+.portfolio {  
+  z-index: 2;
+}
+
+.portfolio__content-header {
+  position: relative;
+}
+
+.portfolio__container-header-img {
+  width: 50px;
+  height: 50px;
+  margin-top: 25px;
+  margin-left: 5px;
+}
+
+.portfolio__content-header-img--info {
+
+    @include large-tablets {
+      display: none;
+    }
+}
+
+.portfolio__list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+    @include tablets {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+}
+
+.portfolio__item {
+  width: calc(100% / 2 - 18px);
+  border-radius: 4px;
+  overflow: hidden;
+  margin-bottom: 68px;
+  flex-wrap: wrap;
+  z-index: 2;
+
+    &:last-child {
+      margin-right: 0;
+      margin-bottom: 0;
+    }
+
+      @include tablets {
+        width: 80%;
+        margin-bottom: 55px;
+      }
+
+      @include small-phones {
+        width: 90%;
+        margin-bottom: 45px;
+      }
+}
+
+.portfolio__item-img {
+  margin-bottom: 20px;
+
+  &:hover {
+    opacity: 90%;
+    transition: 0.3s;
+  }
+}
+
+.portfolio__content {
+  align-items: center;
+  justify-content: center;
+}
+
+.portfolio__content-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  text-align: center;
+  justify-content: center;
+}
+
+.portfolio__header {
+  text-align: center;
+  white-space: nowrap;
+  margin-right: 10px;
+  font-size: 23px;
+  transition: 0.3s all;
+
+  &:hover {
+    color: $azure;
+  }
+
+  @include large-tablets {
+    font-size: 21px;
+  }
+}
+
+.portfolio__content-header {
+  position: relative;
+}
+
+.portfolio__content-header:hover .dropdown {
+  left: initial;
+  right: 0;
+  opacity: 1;
+  transition: 0.3s;
+  }
+
+.portfolio__content-header-img {
+  width: 30px;
+  height: 30px;
+
+    @include large-tablets {
+      width: 29px;
+      height: 29px;
+    }
+
+    &:hover {
+      opacity: 80%;
+      transition: 0.3s;
+    }
+}
+
+.portfolio__stack {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.portfolio__stack-icon{
+  height: 25px;
+  width: 25px;
+  margin-right: 8px;
+  margin-bottom: 10px;
+
+    @include large-tablets {
+      width: 20px;
+      height: 20px;
+    }
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    &--jq {
+      color: #21ACE2;
+    }
+
+    &--scss {
+      color: #C7568E;
+    }
+
+    &--console {
+      color: #00990D;
+    }
+
+    &--yamaps {
+      color: firebrick;
+    }
+
+    &--adaptive {
+      color: lightsalmon;
+    }
+
+    &--flex {
+      color: cadetblue;
+    }
+}

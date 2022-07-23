@@ -1,0 +1,50 @@
+.modal {
+  display: none;
+}
+
+.input-error {
+  border-color: #ff4c5b;
+}
+
+.success-modal {
+  color: $azure;
+}
+
+.error-modal {
+  color: $raspberry;
+}
+
+.modal__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: $deep-blue;
+  padding: 37px 68px;
+  text-align: center;
+  width: 100%;
+  overflow: hidden;
+  border-radius: 20px;
+
+    @include phones {
+      padding: 43px 19px;
+    }
+
+    @include small-phones {
+      padding: 38px 16px;
+    }
+}
+
+.modal__content {
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 35px;
+}
+
+.modal__button {
+  margin-bottom: 15px;
+}
+
+.fancybox-content {
+  background: none;
+}

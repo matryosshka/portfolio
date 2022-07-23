@@ -1,0 +1,80 @@
+.skills {
+
+    @include large-tablets {
+      margin-top: 90px;
+    }
+
+    @include tablets {
+      margin-top: 90px;
+    }
+}
+
+.skills__list {
+  display: flex;
+  justify-content: space-between;
+
+    @include tablets {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+}
+
+.skills__item {
+  background: $blue;
+  z-index: 2;
+  border-radius: 20px;
+  padding: 20px 25px 26px 25px;
+  width: calc(100% / 2 - 30px);
+  overflow: hidden;
+  font-size: 18px;
+
+    @include large-tablets {
+      font-size: 16px;
+      width: calc(100% / 2 - 20px);
+    }
+
+    @include tablets {
+      width: 75%;
+      margin-bottom: 40px;
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+    }
+
+    @include phones {
+      font-size: 14px;
+    }
+
+    @include small-phones {
+      width: 90%;
+      margin-bottom: 35px;
+    }
+}
+
+.skills__terminal {
+  color: $lime;
+  margin-bottom: 10px;
+
+    &--raspberry {
+      color: $raspberry;
+    }
+
+    &--yellow {
+      color: $yellow;
+    }
+
+    &--white {
+      color: #fff;
+    }
+}
+
+.skills__items {
+  margin-bottom: 10px;
+  
+    &:last-child {
+      margin-bottom: 0;
+    }
+}

@@ -1,0 +1,48 @@
+.owl-item {
+  max-height: 700px;
+
+    &cloned {
+      max-height: 700px;
+    }
+
+    &active {
+      max-height: 700px;
+    }
+}
+
+.owl-carousel-img {
+  max-width: 500px;
+}
+
+.owl-nav {
+  text-align: center;
+  margin-top: 25px;
+}
+
+.owl-next, .owl-prev {
+  position: absolute;
+  top: 45%;
+  border: none;
+  background: transparent;
+  color: #fff;
+  font-size: 46px;
+
+  @include hover {
+    background: transparent;
+    color: #FEC738;
+  }
+
+  @include large-tablets {
+    display: none;
+  }
+}
+
+.owl-prev {
+  right: auto;
+  left: -75px;
+}
+
+.owl-next {
+  left: auto;
+  right: -75px;
+}

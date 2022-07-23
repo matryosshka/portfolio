@@ -1,0 +1,52 @@
+.menu__list {
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  white-space: nowrap;
+  flex-wrap: wrap;
+  padding-top: 20px;
+  padding-bottom: 20px;
+
+    @include large-tablets {
+      display: none;
+    }
+}
+
+.menu__item {
+  padding-right: 60px;
+  padding-bottom: 10px;
+
+    &:last-child {
+      padding-right: 0;
+    }
+
+    &:nth-child(1) {
+      @include hover {
+        color: $azure;
+      }
+    }
+
+    &:nth-child(2) {
+      @include hover {
+        color: $raspberry;
+      }
+    }
+
+    &:nth-child(3) {
+      @include hover {
+        color: $yellow;
+      }
+    }
+
+    &:nth-child(4) {
+      @include hover {
+        color: $violet;
+      }
+    }
+
+    &:nth-child(5) {
+      @include hover {
+        color: $lime;
+      }
+    }
+}

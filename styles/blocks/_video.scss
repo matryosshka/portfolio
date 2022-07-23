@@ -1,0 +1,70 @@
+.video {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.video__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 95px;
+}
+
+.video__text {
+  font-size: 35px;
+  z-index: 2;
+
+    &--top {
+      color: $azure;
+      padding-bottom: 10px;
+    }
+
+    &--bottom {
+      color: $raspberry;
+      padding-top: 10px;
+    }
+
+    @include phones {
+      font-size: 31px;
+    }
+
+    @include small-phones {
+      font-size: 28px;
+    }
+}
+
+.video__content {
+  border: 5px dotted;
+  border-color: $violet $raspberry $azure $grey;
+  border-radius: 50%;
+  width: 95%;
+  opacity: 95%;
+  position: relative;
+
+    @include large-tablets {
+      display: none;
+    } 
+}
+
+.video__content-gif {
+  display: none;
+
+    @include large-tablets {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: row;
+    }
+}
+
+.video__content-img {
+  border: 5px dotted;
+  border-color: $violet $raspberry $azure $grey;
+  border-radius: 50%;
+  width: 95%;
+  opacity: 95%;
+}

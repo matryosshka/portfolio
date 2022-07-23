@@ -1,0 +1,75 @@
+$containerWidth: 1280px;
+$baseFontSize: 18px;
+
+//breakpoints
+$large-tablets: 1024px;
+$tablets: 768px;
+$phones: 480px;
+$small-phones: 320px;
+
+//colors
+$azure: #00cfc8;
+$raspberry: #ea4aaa;
+$grey: #627597;
+$deep-blue: #0c162d;
+$blue: #040d21;
+$violet: #8967aa;
+$lime: lime;
+$yellow: #FFFF00;
+
+//fonts
+@font-face {
+  font-family: 'monospace';
+  src: url('../fonts/monospacebold-webfont.woff2') format('woff2'),
+       url('../fonts/monospacebold-webfont.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'monospace';
+  src: url('../fonts/monospaceoblique-webfont.woff2') format('woff2'),
+       url('../fonts/monospaceoblique-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'monospace';
+  src: url('../fonts/monospaceregular-webfont.woff2') format('woff2'),
+       url('../fonts/monospaceregular-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+//setups
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@100;300;400;500;700;800&display=swap');
+@import "./_layout.scss";
+@import "./_media.scss";
+
+//blocks
+@import "./blocks/owl-main.scss";
+@import "./blocks/owl-default.scss";
+@import "./blocks/_section.scss";
+@import "./blocks/_stars.scss";
+@import "./blocks/_satellite.scss";
+@import "./blocks/_header.scss";
+@import "./blocks/_logo.scss";
+@import "./blocks/_menu.scss";
+@import "./blocks/_burger.scss";
+@import "./blocks/_video.scss";
+@import "./blocks/_title.scss";
+@import "./blocks/_portfolio.scss";
+@import "./blocks/_dropdown.scss";
+@import "./blocks/_about.scss";
+@import "./blocks/_link.scss";
+@import "./blocks/_skills.scss";
+@import "./blocks/_achievement.scss";
+@import "./blocks/_owl.scss";
+@import "./blocks/_button.scss";
+@import "./blocks/_contacts.scss";
+@import "./blocks/_form.scss";
+@import "./blocks/_btn.scss";
+@import "./blocks/_social.scss";
+@import "./blocks/_footer.scss";
+@import "./blocks/_modal.scss";

@@ -1,0 +1,22 @@
+.achievement {
+  margin-top: 8%;
+
+    @include large-tablets {
+      margin-top: 10%;
+    }
+
+    @include phones {
+      margin-top: 15%;
+    }
+
+    @include small-phones {
+      margin-top: 20%;
+    }
+}
+
+.achievement__content {
+  position: relative;
+  z-index: 2;
+  margin-left: 10%;
+  margin-right: 10%;
+}
