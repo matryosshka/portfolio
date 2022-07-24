@@ -58,6 +58,21 @@
           padding-bottom: 0;
         }
     }
+
+    &--habr {
+      
+      @include phones {
+        display: none;
+      }
+    }
+
+    &--habr-ph {
+      display: none;
+      
+      @include phones {
+        display: flex;
+      }
+    }
 }
 
 .contacts__link {

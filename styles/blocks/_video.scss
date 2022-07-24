@@ -4,6 +4,10 @@
   justify-content: center;
   align-items: center;
   text-align: center;
+
+    @include phones {
+      min-height: 80vh;
+    }
 }
 
 .video__container {
@@ -12,6 +16,10 @@
   align-items: center;
   justify-content: center;
   padding-bottom: 95px;
+
+    @include phones {
+      padding-bottom: 0;
+    }
 }
 
 .video__text {

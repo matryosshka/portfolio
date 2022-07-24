@@ -13,26 +13,38 @@
 
     @include phones {
       font-size: 30px;
-    }
-
-    @include small-phones {
-      font-size: 29px;
+      padding-bottom: 40px;
     }
 }
 
 .title--portfolio {
 
+    @include small-phones {
+      padding-bottom: 20px;
+    }
+
     &:after {
       content: "";
       background: url('../img/icons/pickaxe.png') no-repeat;
-      margin-left: 8px;
-      background-size: 90%;
-      margin-top: 20px;
+      margin-left: 6px;
+      margin-top: 15px;
+      background-size: 80%;
       width:60px;
       height: 60px;
 
+        @include large-tablets {
+          background-size: 70%;
+          margin-top: 20px;
+        }
+
         @include phones {
-          background-size: 80%;
+          background-size: 65%;
+          margin-top: 25px;
+        }
+
+        @include small-phones {
+          background-size: 60%;
+          margin-top: 30px;
         }
     }
 }

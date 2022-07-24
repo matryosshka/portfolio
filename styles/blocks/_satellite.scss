@@ -24,6 +24,10 @@
       top: 3%;
       left: 78%;
     }
+
+    @include small-phones {
+      left: 76%;
+    }
 }
 
 .satellite__icon {

@@ -86,13 +86,17 @@
   font-size: 23px;
   transition: 0.3s all;
 
-  &:hover {
-    color: $azure;
-  }
+    &:hover {
+      color: $azure;
+    }
 
-  @include large-tablets {
-    font-size: 21px;
-  }
+    @include large-tablets {
+      font-size: 21px;
+    }
+
+    @include phones {
+      font-size: 20px;
+    }
 }
 
 .portfolio__content-header {

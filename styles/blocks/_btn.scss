@@ -17,4 +17,8 @@
     &:last-child {
       margin-right: 0;
     }
+
+    @include phones {
+      font-size: 15px;
+    }
 }
