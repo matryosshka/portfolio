@@ -79,8 +79,9 @@
 }
 
 .burger-menu__nav {
-  display: block;
+  display: flex;
   font-size: 28px;
+  padding-top: 5%;
   color: #fff;
 
     @include tablets {

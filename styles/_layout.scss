@@ -2,11 +2,13 @@ html {
   font-size: $baseFontSize;
   font-family: 'monospace', Helvetica, sans-serif;
   background: $deep-blue;
+  height: -webkit-fill-available;
 }
 
 body {
   color: #fff;
   min-height: 100vh;
+  height: -webkit-fill-available;
 }
 
 button {

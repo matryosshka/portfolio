@@ -32,17 +32,40 @@
     color: #FEC738;
   }
 
-  @include large-tablets {
-    display: none;
-  }
+  // @include large-tablets {
+  //   display: none;
+  // }
 }
 
 .owl-prev {
   right: auto;
-  left: -75px;
+  left: -7%;
+
+    @include phones {
+      left: -8%;
+    }
+
+    @include small-phones {
+      left: -9%;
+    }
 }
 
 .owl-next {
   left: auto;
-  right: -75px;
+  right: -7%;
+
+    @include phones {
+      right: -8%;
+    }
+
+    @include small-phones {
+      right: -9%;
+    }
+}
+
+.owl-dots {
+
+  @include large-tablets {
+    display: block;
+  }
 }

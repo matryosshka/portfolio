@@ -21,11 +21,13 @@ html {
   font-size: 18px;
   font-family: "monospace", Helvetica, sans-serif;
   background: #0c162d;
+  height: -webkit-fill-available;
 }
 
 body {
   color: #fff;
   min-height: 100vh;
+  height: -webkit-fill-available;
 }
 
 button {
@@ -958,8 +960,11 @@ img {
 }
 
 .burger-menu__nav {
-  display: block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   font-size: 28px;
+  padding-top: 5%;
   color: #fff;
 }
 @media screen and (max-width: 768px) {
@@ -1154,7 +1159,6 @@ img {
 .title--portfolio:after {
   content: "";
   background: url("../img/icons/pickaxe.png") no-repeat;
-  margin-left: 6px;
   margin-top: 15px;
   background-size: 80%;
   width: 60px;
@@ -1729,20 +1733,41 @@ img {
     color: #FEC738;
   }
 }
-@media screen and (max-width: 1024px) {
-  .owl-next, .owl-prev {
-    display: none;
-  }
-}
 
 .owl-prev {
   right: auto;
-  left: -75px;
+  left: -7%;
+}
+@media screen and (max-width: 480px) {
+  .owl-prev {
+    left: -8%;
+  }
+}
+@media screen and (max-width: 320px) {
+  .owl-prev {
+    left: -9%;
+  }
 }
 
 .owl-next {
   left: auto;
-  right: -75px;
+  right: -7%;
+}
+@media screen and (max-width: 480px) {
+  .owl-next {
+    right: -8%;
+  }
+}
+@media screen and (max-width: 320px) {
+  .owl-next {
+    right: -9%;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .owl-dots {
+    display: block;
+  }
 }
 
 .button {
