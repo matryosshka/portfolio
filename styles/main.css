@@ -2079,6 +2079,8 @@ img {
 }
 .social__item:hover {
   opacity: 70%;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 .social__item:last-child {
   margin-right: 0;
