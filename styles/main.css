@@ -591,6 +591,11 @@ img {
   width: 90px;
   height: 90px;
 }
+.logo__img:hover {
+  opacity: 80%;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
 @media screen and (max-width: 1024px) {
   .logo__img {
     width: 85px;
