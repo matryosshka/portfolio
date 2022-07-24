@@ -1755,12 +1755,12 @@ img {
 }
 @media screen and (max-width: 480px) {
   .owl-next {
-    right: -8%;
+    right: -9%;
   }
 }
 @media screen and (max-width: 320px) {
   .owl-next {
-    right: -8%;
+    right: -9%;
   }
 }
 
