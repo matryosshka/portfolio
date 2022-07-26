@@ -170,4 +170,19 @@
     &--flex {
       color: cadetblue;
     }
+
+    &--github {
+      width: 30px;
+      height: 30px;
+
+        @include tablets {
+          width: 28px;
+          height: 28px;
+        }
+
+        @include phones {
+          width: 25px;
+          height: 25px;
+        }
+    }
 }

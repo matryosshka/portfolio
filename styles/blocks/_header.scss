@@ -5,6 +5,11 @@
   font-size: 21px;
   z-index: 2;
   min-height: 100px;
+
+    @include phones {
+      min-height: 80px;
+      height: 80px;
+    }
 }
 
 .header__container {

@@ -560,6 +560,12 @@ img {
   z-index: 2;
   min-height: 100px;
 }
+@media screen and (max-width: 480px) {
+  .header {
+    min-height: 80px;
+    height: 80px;
+  }
+}
 
 .header__container {
   margin: 0 auto;
@@ -1450,6 +1456,22 @@ img {
 }
 .portfolio__stack-icon--flex {
   color: cadetblue;
+}
+.portfolio__stack-icon--github {
+  width: 30px;
+  height: 30px;
+}
+@media screen and (max-width: 768px) {
+  .portfolio__stack-icon--github {
+    width: 28px;
+    height: 28px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .portfolio__stack-icon--github {
+    width: 25px;
+    height: 25px;
+  }
 }
 
 .dropdown {
