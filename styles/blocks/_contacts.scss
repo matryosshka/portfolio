@@ -1,12 +1,17 @@
 .contacts {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   z-index: 2;
   position: relative;
-  margin-top: 90px;
-  margin-bottom: 90px;
+  padding-bottom: 2%;
 
     @include large-tablets {
-      margin-top: 50px;
-      margin-bottom: 50px;
+      padding-bottom: 13%;
+    }
+
+    @include phones {
+      padding-bottom: 16%;
     }
 }
 
@@ -15,7 +20,7 @@
   align-items: center;
   justify-content: center;
   flex-direction: row;
-  padding-bottom: 10px;
+  margin-bottom: 20px;
 }
 
 .contacts__img {
@@ -32,10 +37,10 @@
 .contacts__items {
   display: flex;
   flex-direction: column;
-  padding-bottom: 20px;
+  margin-bottom: 20px;
 
     @include tablets {
-      padding-bottom: 40px;
+      margin-bottom: 40px;
     }
 
     @include small-phones {

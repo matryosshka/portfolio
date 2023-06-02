@@ -1,40 +1,42 @@
 .footer {
+  display: flex;
   z-index: 2;
   margin: 0 auto;
   width: 100%;
   bottom: 0;
   min-height: 90px;
   background: #040d21;
+
+  @include tablets {
+    min-height: 180px;
+  }
 }
 
 .footer__container {
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  margin: 0 auto;
-  padding-bottom: 30px;
-  padding-top: 30px;
   width: 85%;
-  max-width: $containerWidth;
-  min-height: 90px;
+  min-height: 120px;
 
-    @include tablets {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-    }
+  @include tablets {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+  }
 }
 
 .footer__content {
-  text-align: center;
+   text-align: center;
 
-    @include tablets {
-      margin-bottom: 5%;
-    }
+   @include tablets {
+    margin-bottom: 5%;
+  }
 
-    @include phones {
-      margin-bottom: 7%;
-      font-size: 17px;
-    }
+  @include phones {
+    margin-bottom: 7%;
+    font-size: 17px;
+  }
 }

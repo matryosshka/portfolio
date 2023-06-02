@@ -13,10 +13,8 @@
 }
 
 .header__container {
-  margin: 0 auto;
-  width: 95%;
-  max-width: $containerWidth;
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
   align-items: center;
 

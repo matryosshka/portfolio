@@ -1,12 +1,13 @@
 .skills {
+  padding-bottom: 8%;
 
-    @include large-tablets {
-      margin-top: 90px;
-    }
+  @include tablets {
+    padding-bottom: 9%;
+  }
 
-    @include tablets {
-      margin-top: 90px;
-    }
+  @include phones {
+    padding-bottom: 10%;
+  }
 }
 
 .skills__list {
@@ -21,7 +22,7 @@
     }
 }
 
-.skills__item {
+.skills__items {
   background: $blue;
   z-index: 2;
   border-radius: 20px;
@@ -68,8 +69,8 @@
     }
 }
 
-.skills__items {
-  margin-bottom: 10px;
+.skills__item {
+  margin-bottom: 5px;
   
     &:last-child {
       margin-bottom: 0;

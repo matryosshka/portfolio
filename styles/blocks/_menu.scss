@@ -4,8 +4,6 @@
   align-items: center; 
   white-space: nowrap;
   flex-wrap: wrap;
-  padding-top: 20px;
-  padding-bottom: 20px;
 
     @include large-tablets {
       display: none;
@@ -13,11 +11,10 @@
 }
 
 .menu__item {
-  padding-right: 60px;
-  padding-bottom: 10px;
+  margin-right: 55px;
 
     &:last-child {
-      padding-right: 0;
+      margin-right: 0;
     }
 
     &:nth-child(1) {

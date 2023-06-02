@@ -1,13 +1,13 @@
 .about {
+  padding-bottom: 8%;
 
-    @include large-tablets {
-      position: relative;
-      margin-top: 60px;
-    }
+  @include tablets {
+    padding-bottom: 9%;
+  }
 
-    @include tablets {
-      margin-top: 90px;
-    }
+  @include phones {
+    padding-bottom: 10%;
+  }
 }
 
 .about__content {
@@ -30,12 +30,12 @@
 }
 
 .about__content-foto {
-  border: 5px dotted;
-  border-color: $violet $raspberry $azure $grey;
-  max-width: 360px;
+  border: 7px double;
+  border-color: #8967aa #ea4aaa #00cfc8 #627597;
+  max-width: 30%;
   z-index: 2;
-  border-radius: 30%;
-  margin-right: 55px;
+  border-radius: 3%;
+  margin-right: 5%;
 
     @include large-tablets {
       max-width: 280px;

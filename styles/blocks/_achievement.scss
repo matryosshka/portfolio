@@ -1,17 +1,13 @@
 .achievement {
-  margin-top: 8%;
+  padding-bottom: 8%;
 
-    @include large-tablets {
-      margin-top: 10%;
-    }
+  @include tablets {
+    padding-bottom: 9%;
+  }
 
-    @include phones {
-      margin-top: 15%;
-    }
-
-    @include small-phones {
-      margin-top: 20%;
-    }
+  @include phones {
+    padding-bottom: 10%;
+  }
 }
 
 .achievement__content {
