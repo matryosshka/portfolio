@@ -63,6 +63,13 @@ img {
   max-height: 100%;
 }
 
+video {
+  object-fit: cover;
+  object-position: center;
+  overflow-clip-margin: content-box;
+  overflow: clip;
+}
+
 .wrapper {
   overflow: hidden;
   display: flex;

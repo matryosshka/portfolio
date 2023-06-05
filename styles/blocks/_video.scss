@@ -46,8 +46,8 @@
   border-color: $violet $raspberry $azure $grey;
   border-radius: 50%;
   width: 95%;
+  min-height: 100%;
   opacity: 95%;
-  position: relative;
 
     @include large-tablets {
       display: none;
@@ -70,5 +70,6 @@
   border-color: $violet $raspberry $azure $grey;
   border-radius: 50%;
   width: 95%;
+  min-height: 100%;
   opacity: 95%;
 }
