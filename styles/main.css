@@ -686,14 +686,11 @@ video {
 .video__content-img {
   border: 5px dotted;
   border-color: #8967aa #ea4aaa #00cfc8 #627597;
-  border-top-left-radius: 100px;
-  border-top-right-radius: 100px;
-  border-bottom-right-radius: 100px;
-  border-bottom-left-radius: 100px;
-  border-radius: 100px 100px 100px 100px;
+  border-radius: 477px/134px;
   width: 95%;
   min-height: 100%;
-  opacity: 95%; }
+  opacity: 95%;
+  z-index: 2; }
 
 .title {
   display: flex;
@@ -711,7 +708,7 @@ video {
       font-size: 30px;
       margin-bottom: 40px; } }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 768px) {
   .title--portfolio {
     padding-top: 5px; } }
 @media screen and (max-width: 320px) {
