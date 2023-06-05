@@ -686,8 +686,11 @@ video {
 .video__content-img {
   border: 5px dotted;
   border-color: #8967aa #ea4aaa #00cfc8 #627597;
-  -moz-border-radius: 100px;
-  border-radius: 50%;
+  border-top-left-radius: 100px;
+  border-top-right-radius: 100px;
+  border-bottom-right-radius: 100px;
+  border-bottom-left-radius: 100px;
+  border-radius: 100px 100px 100px 100px;
   width: 95%;
   min-height: 100%;
   opacity: 95%; }
@@ -708,6 +711,9 @@ video {
       font-size: 30px;
       margin-bottom: 40px; } }
 
+@media screen and (max-width: 480px) {
+  .title--portfolio {
+    padding-top: 5px; } }
 @media screen and (max-width: 320px) {
   .title--portfolio {
     margin-bottom: 20px; } }
