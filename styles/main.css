@@ -637,6 +637,9 @@ video {
   align-items: center;
   text-align: center;
   min-height: 90vh; }
+  @media screen and (max-width: 480px) {
+    .video {
+      min-height: 80vh; } }
 
 .video__container {
   display: flex;
@@ -683,15 +686,8 @@ video {
 .video__content-img {
   border: 5px dotted;
   border-color: #8967aa #ea4aaa #00cfc8 #627597;
-  border-top-left-radius: 50%;
-  border-top-right-radius: 50%;
-  border-bottom-right-radius: 50%;
-  border-bottom-left-radius: 50%;
-  border-radius: 50% 50% 50% 50%;
-  -moz-border-radius-topleft: 100px;
-  -moz-border-radius-topright: 100px;
-  -moz-border-radius-bottomright: 100px;
-  -moz-border-radius-bottomleft: 100px;
+  -moz-border-radius: 100px;
+  border-radius: 50%;
   width: 95%;
   min-height: 100%;
   opacity: 95%; }
