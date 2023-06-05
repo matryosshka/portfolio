@@ -44,8 +44,11 @@
       <section class="video">
         <div class="container video__container">
           <div class="video__text video__text--top">'hello'</div>
-          <video autoplay loop muted width="1216" height="333" class="video__content">
-            <source src="./video/nyan_cat.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"' />
+          <video autoplay loop muted width="1216" height="333" poster="./video/poster.png" class="video__content">
+            <source src="./video/nyan_cat.webm" type='video/webm' />
+            <source src="./video/nyan_cat.mp4" type='video/mp4' />
+            <source src="./video/nyan_cat.hevc.mp4" type='video/mp4' />
+            <p>О неет, ваш браузер не поддерживает встроенные видео (×﹏×)</p>
           </video>
 
           <div class="video__content-gif">
