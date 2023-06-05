@@ -686,7 +686,10 @@ video {
 .video__content-img {
   border: 5px dotted;
   border-color: #8967aa #ea4aaa #00cfc8 #627597;
-  border-radius: 477px/134px;
+  border-top-left-radius: 477px 134px;
+  border-top-right-radius: 477px 134px;
+  border-bottom-right-radius: 477px 134px;
+  border-bottom-left-radius: 477px 134px;
   width: 95%;
   min-height: 100%;
   opacity: 95%;
