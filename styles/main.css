@@ -955,7 +955,8 @@ video {
   align-items: center;
   margin-bottom: 20px;
   text-align: center;
-  justify-content: center; }
+  justify-content: center;
+  position: relative; }
 
 .portfolio__content-header:hover .dropdown {
   left: initial;
