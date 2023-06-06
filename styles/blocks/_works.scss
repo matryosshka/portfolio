@@ -1,0 +1,70 @@
+.works__list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding-bottom: 130px;
+
+  @include large-tablets {
+    padding-bottom: 120px;
+  }
+
+  @include tablets {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 110px;
+  }
+
+  @include phones {
+    padding-bottom: 100px;
+  }
+}
+
+.works__item {
+  width: calc(100% / 2 - 18px);
+  margin-bottom: 68px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  @include tablets {
+    width: 80%;
+    margin-bottom: 55px;
+  }
+
+   @include small-phones {
+     width: 90%;
+     margin-bottom: 45px;
+   }
+}
+
+// ***
+// На случай отображения элементов списком
+// .works__list {
+//   display: flex;
+//   flex-direction: column;
+//   align-items: center;
+//   justify-content: center;
+//   margin: 0 auto;
+//   padding-bottom: 120px;
+// }
+//***
+
+// ***
+// На случай, если захочется вернуть утячий баннер
+// .works__img {
+//   height: 76px;
+//   overflow: hidden;
+//   flex-shrink: 0;
+//   display: flex;
+//   align-items: center;
+//   justify-content: center;
+//   margin-top: 70px;
+// }
+
+// .works__img-item {
+//   object-fit: cover;
+// }
+// ***

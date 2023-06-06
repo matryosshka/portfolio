@@ -17,7 +17,11 @@
     }
 }
 
-.title--portfolio {
+.title--projects {
+
+    @include tablets {
+      padding-top: 5px;
+    }
 
     @include small-phones {
       margin-bottom: 20px;
@@ -102,7 +106,7 @@
       content: "";
       background: url('../img/icons/galaxy.svg') no-repeat;
       margin-right: 20px;
-      width:55px;
+      width: 55px;
       height: 55px;
 
         @include phones {
@@ -110,4 +114,89 @@
           height: 50px;
         }
     }
+}
+
+.title--duck  {
+  padding-top: 80px;
+  margin-bottom: 80px;
+  background: linear-gradient(257deg, #ea4aaa 20%, #00cfc8);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 400;
+  font-size: 37px;
+  font-family: monospace;
+  white-space: nowrap;
+  color: #8665A7;
+  z-index: 2;
+
+  @include large-tablets {
+    font-size: 32px;
+    padding-top: 60px;
+    margin-bottom: 60px;
+  }
+
+  @include tablets {
+    font-size: 31px;
+  }
+
+  @include phones {
+    font-size: 28px;
+    white-space: pre-line;
+    padding-top: 55px;
+    margin-bottom: 55px;
+  }
+
+  &:before {
+    content: "";
+    background: url('../img/icons/duck.png') no-repeat;
+    margin-top: 9px;
+    margin-right: -5px;
+    background-size: 70%;
+    width: 60px;
+    height: 60px;
+
+      @include large-tablets {
+        background-size: 70%;
+        margin-top: 20px;
+      }
+
+      @include tablets {
+        display: none;
+      }
+  }
+}
+
+.title__animation {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.title__blink {
+  animation: blink 2s linear infinite;
+  font-weight: 700;
+  font-size: 37px;
+  color: #8665A7;
+  z-index: 2;
+  padding-left: 1px;
+
+  @include large-tablets {
+    font-size: 32px;
+  }
+
+  @include tablets {
+    font-size: 31px;
+  }
+
+  @include phones {
+    display: none;
+  }
+}
+
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
 }

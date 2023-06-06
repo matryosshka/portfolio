@@ -1,0 +1,58 @@
+.projects {  
+  z-index: 2;
+  padding-bottom: 8%;
+
+  @include tablets {
+    padding-bottom: 9%;
+  }
+
+  @include phones {
+    padding-bottom: 10%;
+  }
+}
+
+.projects__list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+    @include tablets {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+}
+
+.projects__item {
+  width: calc(100% / 2 - 18px);
+  margin-bottom: 68px;
+
+  &:nth-child(n + 3) {
+    margin-bottom: 0;
+  }
+
+    @include tablets {
+      width: 80%;
+
+      &:nth-child(n) {
+        margin-bottom: 55px;
+      }
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+
+      @include small-phones {
+        width: 90%;
+
+        &:nth-child(n) {
+          margin-bottom: 45px;
+        }
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+}

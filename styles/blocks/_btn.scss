@@ -18,7 +18,21 @@
       margin-right: 0;
     }
 
+    &--projects {
+      text-transform: uppercase;
+      padding: 10px 40px;
+      text-align: center;
+    }
+
     @include phones {
       font-size: 15px;
     }
+}
+
+.projects__button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 45px;
+  z-index: 2;
 }

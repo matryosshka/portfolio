@@ -44,17 +44,7 @@
 .video__content {
   border: 5px dotted;
   border-color: $violet $raspberry $azure $grey;
-
-  -moz-border-radius-topleft: 50%;
-  -moz-border-radius-topright: 50%;
-  -moz-border-radius-bottomright: 50%;
-  -moz-border-radius-bottomleft: 50%;
-  -webkit-border-top-left-radius: 50%;
-  -webkit-border-top-right-radius: 50%;
-  -webkit-border-bottom-right-radius: 50%;
-  -webkit-border-bottom-left-radius: 50%;
-  border-radius: 50% 50% 50% 50%;
-
+  border-radius: 50%;
   width: 95%;
   min-height: 100%;
   opacity: 95%;
@@ -76,10 +66,18 @@
 }
 
 .video__content-img {
-  border: 5px dotted;
-  border-color: $violet $raspberry $azure $grey;
-  border-radius: 50%;
-  width: 95%;
-  min-height: 100%;
-  opacity: 95%;
+
+  @include large-tablets {
+    width: 95%;
+    min-height: 100%;
+    border-radius: 50%;
+    border: 5px dotted;
+    border-color: $violet $raspberry $azure $grey;
+    opacity: 95%;
+    z-index: 2;
+  }
+
+  @include tablets {
+    border-style: none;
+  }
 }

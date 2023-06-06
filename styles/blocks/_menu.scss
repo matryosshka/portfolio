@@ -46,4 +46,19 @@
         color: $lime;
       }
     }
+
+    &--projects {
+
+      &:nth-child(1) {
+        @include hover {
+          color: $violet;
+        }
+      }
+
+      &:nth-child(2) {
+        @include hover {
+          color: $azure;
+        }
+      }
+    }
 }

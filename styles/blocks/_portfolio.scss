@@ -1,89 +1,21 @@
-.portfolio {  
+.portfolio {
   z-index: 2;
-  padding-bottom: 8%;
-
-  @include tablets {
-    padding-bottom: 9%;
-  }
-
-  @include phones {
-    padding-bottom: 10%;
-  }
-}
-
-.portfolio__content-header {
-  position: relative;
-}
-
-.portfolio__container-header-img {
-  width: 50px;
-  height: 50px;
-  margin-top: 25px;
-  margin-left: 5px;
-}
-
-.portfolio__content-header-img--info {
-
-    @include large-tablets {
-      display: none;
-    }
-}
-
-.portfolio__list {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-
-    @include tablets {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-    }
-}
-
-.portfolio__item {
-  width: calc(100% / 2 - 18px);
-  border-radius: 4px;
-  margin-bottom: 68px;
-  flex-wrap: wrap;
-  z-index: 2;
-
-  &:nth-child(n + 3) {
-    margin-bottom: 0;
-  }
-
-    @include tablets {
-      width: 80%;
-
-      &:nth-child(n) {
-        margin-bottom: 55px;
-      }
-
-      &:last-child {
-        margin-bottom: 0;
-      }
-    }
-
-      @include small-phones {
-        width: 90%;
-
-        &:nth-child(n) {
-          margin-bottom: 45px;
-        }
-
-        &:last-child {
-          margin-bottom: 0;
-        }
-      }
 }
 
 .portfolio__item-img {
+  border-radius: 4px;
   margin-bottom: 20px;
+  display: block;
+  object-fit: cover;
 
   &:hover {
     opacity: 90%;
     transition: 0.3s;
+  }
+
+  &--nyan {
+    border: 2px solid;
+    border-color: #1a1e24;
   }
 }
 
@@ -99,6 +31,13 @@
   text-align: center;
   justify-content: center;
 }
+
+.portfolio__content-header:hover .dropdown {
+  left: initial;
+  right: 0;
+  opacity: 1;
+  transition: 0.3s;
+  }
 
 .portfolio__header {
   text-align: center;
@@ -120,17 +59,6 @@
     }
 }
 
-.portfolio__content-header {
-  position: relative;
-}
-
-.portfolio__content-header:hover .dropdown {
-  left: initial;
-  right: 0;
-  opacity: 1;
-  transition: 0.3s;
-  }
-
 .portfolio__content-header-img {
   width: 30px;
   height: 30px;
@@ -143,6 +71,13 @@
     &:hover {
       opacity: 80%;
       transition: 0.3s;
+    }
+}
+
+.portfolio__content-header-img--info {
+
+    @include large-tablets {
+      display: none;
     }
 }
 
