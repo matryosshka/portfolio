@@ -116,12 +116,14 @@
     }
 }
 
-.title--duck  {
+.title--duck {
   padding-top: 80px;
   margin-bottom: 80px;
   background: linear-gradient(257deg, #ea4aaa 20%, #00cfc8);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  text-shadow: 0px 0px #00000000; 
+  -webkit-box-decoration-break: clone;
   font-weight: 400;
   font-size: 37px;
   font-family: monospace;
