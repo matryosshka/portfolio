@@ -375,13 +375,25 @@ video {
       position: absolute;
       top: 3%;
       left: 78%; } }
+  @media screen and (max-width: 480px) {
+    .satellite--adaptive {
+      top: 5%; } }
   @media screen and (max-width: 320px) {
     .satellite--adaptive {
+      top: 7%;
       left: 76%; } }
 
 .satellite__icon {
   width: 65px;
   height: 65px; }
+  @media screen and (max-width: 480px) {
+    .satellite__icon {
+      width: 53px;
+      height: 53px; } }
+  @media screen and (max-width: 320px) {
+    .satellite__icon {
+      width: 50px;
+      height: 50px; } }
 
 @-webkit-keyframes rotate-center {
   0% {
@@ -810,9 +822,13 @@ video {
   z-index: 2; }
   @media screen and (max-width: 1024px) {
     .title--duck {
+      display: inline-block;
       font-size: 32px;
       padding-top: 60px;
-      margin-bottom: 60px; } }
+      margin-bottom: 60px; }
+      .title--duck:after {
+        content: "_";
+        padding-left: 3px; } }
   @media screen and (max-width: 768px) {
     .title--duck {
       font-size: 31px; } }
@@ -834,7 +850,7 @@ video {
     @media screen and (max-width: 1024px) {
       .title--duck:before {
         background-size: 70%;
-        margin-top: 20px; } }
+        margin-top: 2px; } }
     @media screen and (max-width: 768px) {
       .title--duck:before {
         display: none; } }
@@ -858,12 +874,6 @@ video {
   z-index: 2;
   padding-left: 1px; }
   @media screen and (max-width: 1024px) {
-    .title__blink {
-      font-size: 32px; } }
-  @media screen and (max-width: 768px) {
-    .title__blink {
-      font-size: 31px; } }
-  @media screen and (max-width: 480px) {
     .title__blink {
       display: none; } }
 
@@ -985,7 +995,7 @@ video {
 .portfolio__item-img {
   object-fit: cover; }
   .portfolio__item-img--nyan {
-    border: 3px solid;
+    border: 2px solid;
     border-radius: 4px;
     border-color: #1a1e24; }
 
@@ -1384,7 +1394,7 @@ video {
   margin-right: 40px;
   margin-bottom: 20px;
   z-index: 2; }
-  @media screen and (max-width: 480px) {
+  @media screen and (max-width: 768px) {
     .contacts__img {
       display: none; } }
 
@@ -1397,8 +1407,8 @@ video {
       margin-bottom: 40px; } }
   @media screen and (max-width: 320px) {
     .contacts__items {
-      padding-left: 5%;
-      padding-right: 5%; } }
+      padding-left: 1%;
+      padding-right: 1%; } }
 
 .contacts__item {
   font-size: 20px; }
@@ -1410,6 +1420,9 @@ video {
       padding-bottom: 10px; }
       .contacts__item:last-child {
         padding-bottom: 0; } }
+  @media screen and (max-width: 320px) {
+    .contacts__item {
+      font-size: 15px; } }
   @media screen and (max-width: 480px) {
     .contacts__item--habr {
       display: none; } }

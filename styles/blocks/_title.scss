@@ -130,9 +130,15 @@
   z-index: 2;
 
   @include large-tablets {
+    display: inline-block;
     font-size: 32px;
     padding-top: 60px;
     margin-bottom: 60px;
+
+    &:after {
+      content: "_";
+      padding-left: 3px;
+    }
   }
 
   @include tablets {
@@ -157,13 +163,12 @@
 
       @include large-tablets {
         background-size: 70%;
-        margin-top: 20px;
+        margin-top: 2px;
       }
 
       @include tablets {
         display: none;
       }
-
 
       animation: slide-top 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 
@@ -195,16 +200,17 @@
   padding-left: 1px;
 
   @include large-tablets {
-    font-size: 32px;
-  }
-
-  @include tablets {
-    font-size: 31px;
-  }
-
-  @include phones {
+    // font-size: 32px;
     display: none;
   }
+
+  // @include tablets {
+  //   font-size: 31px;
+  // }
+
+  // @include phones {
+  //   display: none;
+  // }
 }
 
 @keyframes blink {
