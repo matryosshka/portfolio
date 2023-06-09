@@ -44,7 +44,13 @@
     &:nth-child(5) {
       @include hover {
         color: $lime;
-      }
+      }      
+    }
+
+    &:nth-child(6) {
+      @include hover {
+        color: #9b9a9a;
+      }      
     }
 
     &--projects {

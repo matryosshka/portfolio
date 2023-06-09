@@ -52,11 +52,13 @@ h4,
 h5,
 h6 {
   font-weight: normal;
-  margin: 0; }
+  margin: 0;
+  user-select: none; }
 
 p {
   margin: 0;
-  padding: 0; }
+  padding: 0;
+  user-select: none; }
 
 a {
   color: inherit;
@@ -532,6 +534,9 @@ video {
     .menu__item:nth-child(5):hover {
       color: lime; } }
   @media (hover: hover) {
+    .menu__item:nth-child(6):hover {
+      color: #9b9a9a; } }
+  @media (hover: hover) {
     .menu__item--projects:nth-child(1):hover {
       color: #8967aa; } }
   @media (hover: hover) {
@@ -631,7 +636,7 @@ video {
 .burger-menu__item {
   margin-bottom: 20%; }
   .burger-menu__item:last-child {
-    margin-right: 0; }
+    margin-bottom: 0; }
   @media screen and (max-width: 768px) {
     .burger-menu__item {
       margin-bottom: 18%; } }
@@ -810,7 +815,7 @@ video {
       font-size: 31px; } }
   @media screen and (max-width: 480px) {
     .title--duck {
-      font-size: 28px;
+      font-size: 25px;
       white-space: pre-line;
       padding-top: 55px;
       margin-bottom: 55px; } }
@@ -821,7 +826,8 @@ video {
     margin-right: -5px;
     background-size: 70%;
     width: 60px;
-    height: 60px; }
+    height: 60px;
+    animation: slide-top 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both; }
     @media screen and (max-width: 1024px) {
       .title--duck:before {
         background-size: 70%;
@@ -829,7 +835,11 @@ video {
     @media screen and (max-width: 768px) {
       .title--duck:before {
         display: none; } }
-
+@keyframes slide-top {
+  0% {
+    transform: translateY(-40px); }
+  100% {
+    transform: translateY(0); } }
 .title__animation {
   display: flex;
   flex-direction: row;
@@ -860,12 +870,15 @@ video {
 .projects {
   z-index: 2;
   padding-bottom: 8%; }
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 1024px) {
     .projects {
       padding-bottom: 9%; } }
-  @media screen and (max-width: 480px) {
+  @media screen and (max-width: 768px) {
     .projects {
       padding-bottom: 10%; } }
+  @media screen and (max-width: 480px) {
+    .projects {
+      padding-bottom: 12%; } }
 
 .projects__list {
   display: flex;
@@ -897,6 +910,22 @@ video {
         margin-bottom: 45px; }
       .projects__item:last-child {
         margin-bottom: 0; } }
+
+.projects__button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 45px;
+  z-index: 2; }
+  @media screen and (max-width: 1024px) {
+    .projects__button {
+      padding-top: 30px; } }
+  @media screen and (max-width: 768px) {
+    .projects__button {
+      padding-top: 34px; } }
+  @media screen and (max-width: 768px) {
+    .projects__button {
+      padding-top: 32px; } }
 
 .works__list {
   display: flex;
@@ -932,23 +961,57 @@ video {
       margin-bottom: 45px; } }
 
 .portfolio {
+  display: flex;
+  flex-direction: column;
   z-index: 2; }
 
-.portfolio__item-img {
+.portfolio__item-cover {
+  display: flex;
+  justify-content: center;
+  max-height: 285px;
   border-radius: 4px;
   margin-bottom: 20px;
-  display: block;
+  overflow: hidden;
+  position: relative;
+  transition: 0.5s; }
+  .portfolio__item-cover:hover {
+    transform: scale(1.04);
+    opacity: 85%;
+    transition: 0.5s; }
+
+.portfolio__item-img {
   object-fit: cover; }
-  .portfolio__item-img:hover {
-    opacity: 90%;
-    transition: 0.3s; }
   .portfolio__item-img--nyan {
-    border: 2px solid;
+    border: 3px solid;
+    border-radius: 4px;
     border-color: #1a1e24; }
 
+.portfolio__item-desc {
+  position: absolute;
+  vertical-align: middle;
+  text-align: center;
+  bottom: 35%;
+  font-size: 28px;
+  color: #404040; }
+  @media screen and (max-width: 1024px) {
+    .portfolio__item-desc {
+      bottom: 33%;
+      font-size: 23px; } }
+  @media screen and (max-width: 768px) {
+    .portfolio__item-desc {
+      bottom: 34%;
+      font-size: 25px; } }
+  @media screen and (max-width: 480px) {
+    .portfolio__item-desc {
+      bottom: 31%;
+      font-size: 21px; } }
+  @media screen and (max-width: 320px) {
+    .portfolio__item-desc {
+      bottom: 28%;
+      font-size: 18px; } }
+
 .portfolio__content {
-  align-items: center;
-  justify-content: center; }
+  flex: 1; }
 
 .portfolio__content-header {
   display: flex;
@@ -1437,13 +1500,6 @@ video {
   @media screen and (max-width: 480px) {
     .btn {
       font-size: 15px; } }
-
-.projects__button {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding-top: 45px;
-  z-index: 2; }
 
 .social {
   display: flex;

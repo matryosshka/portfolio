@@ -43,11 +43,13 @@ h5,
 h6 {
   font-weight: normal;
   margin: 0;
+  user-select: none;
 }
 
 p {
   margin: 0;
   padding: 0;
+  user-select: none;
 }
 
 a {

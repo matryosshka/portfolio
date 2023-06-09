@@ -2,12 +2,16 @@
   z-index: 2;
   padding-bottom: 8%;
 
-  @include tablets {
+  @include large-tablets {
     padding-bottom: 9%;
   }
 
-  @include phones {
+  @include tablets {
     padding-bottom: 10%;
+  }
+
+  @include phones {
+    padding-bottom: 12%;
   }
 }
 
@@ -55,4 +59,24 @@
           margin-bottom: 0;
         }
       }
+}
+
+.projects__button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 45px;
+  z-index: 2;
+
+  @include large-tablets {
+    padding-top: 30px;
+  }
+
+  @include tablets {
+    padding-top: 34px;
+  }
+
+  @include tablets {
+    padding-top: 32px;
+  }
 }
