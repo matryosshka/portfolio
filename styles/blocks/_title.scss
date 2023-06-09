@@ -128,23 +128,29 @@
   white-space: nowrap;
   color: #8665A7;
   z-index: 2;
+  text-shadow: 0px 0px #00000000; 
+  -webkit-box-decoration-break: clone;
 
-  @include large-tablets {
-    font-size: 32px;
-    padding-top: 60px;
-    margin-bottom: 60px;
-  }
+  // @include large-tablets {
+  //   font-size: 32px;
+  //   padding-top: 60px;
+  //   margin-bottom: 60px;
+  //   background: none;
+  //   -webkit-background-clip: unset;
+  //   -webkit-text-fill-color: unset;
+  //   color: #8665A7;
+  // }
 
-  @include tablets {
-    font-size: 31px;
-  }
+  // @include tablets {
+  //   font-size: 31px;
+  // }
 
-  @include phones {
-    font-size: 25px;
-    white-space: pre-line;
-    padding-top: 55px;
-    margin-bottom: 55px;
-  }
+  // @include phones {
+  //   font-size: 25px;
+  //   white-space: pre-line;
+  //   padding-top: 55px;
+  //   margin-bottom: 55px;
+  // }
 
   &:before {
     content: "";
@@ -157,13 +163,11 @@
 
       @include large-tablets {
         background-size: 70%;
-        margin-top: 20px;
       }
 
       @include tablets {
         display: none;
       }
-
 
       animation: slide-top 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 
@@ -184,6 +188,10 @@
   align-items: center;
   justify-content: center;
   margin: 0 auto;
+
+  @include large-tablets {
+    display: none;
+  }
 }
 
 .title__blink {
@@ -210,5 +218,38 @@
 @keyframes blink {
   50% {
     opacity: 0;
+  }
+}
+
+.title--duck-mobile, h1 {
+  display: none;
+
+  @include large-tablets {
+    display: block;
+
+    padding-top: 60px;
+    margin-bottom: 60px;
+    background: linear-gradient(257deg, #ea4aaa 20%, #00cfc8);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 0px 0px #00000000; 
+    -webkit-box-decoration-break: clone;
+    font-weight: 400;
+    font-size: 32px;
+    font-family: monospace;
+    white-space: nowrap;
+    color: #8665A7;
+    z-index: 2;
+  }
+
+  @include tablets {
+    font-size: 31px;
+  }
+
+  @include phones {
+    font-size: 25px;
+    white-space: pre-line;
+    padding-top: 55px;
+    margin-bottom: 55px;
   }
 }

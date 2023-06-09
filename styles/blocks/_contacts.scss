@@ -44,8 +44,8 @@
     }
 
     @include small-phones {
-      padding-left: 5%;
-      padding-right: 5%;
+      padding-left: 1%;
+      padding-right: 1%;
     }
 }
 
@@ -62,6 +62,10 @@
         &:last-child {
           padding-bottom: 0;
         }
+    }
+
+    @include small-phones {
+      font-size: 15px;
     }
 
     &--habr {
