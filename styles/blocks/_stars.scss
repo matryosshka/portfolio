@@ -21,6 +21,8 @@
   radial-gradient(3px 3px at 88px 59px, #ccc, rgba(0, 0, 0, 0));
   background-repeat: repeat;
   background-size: 180px 180px;
+  -webkit-font-smoothing: subpixel-antialiased;
+  backface-visibility: hidden;
 
     @include large-tablets {
       background-position: 1% -1%;
