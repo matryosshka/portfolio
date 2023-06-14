@@ -152,6 +152,11 @@
     margin-bottom: 55px;
   }
 
+  @include small-phones {
+    padding-top: 40px;
+    margin-bottom: 40px;
+  }
+
   &:before {
     content: "";
     background: url('../img/icons/duck.png') no-repeat;
@@ -162,11 +167,6 @@
     height: 60px;
 
       @include large-tablets {
-        background-size: 70%;
-        margin-top: 2px;
-      }
-
-      @include tablets {
         display: none;
       }
 
@@ -200,17 +200,8 @@
   padding-left: 1px;
 
   @include large-tablets {
-    // font-size: 32px;
     display: none;
   }
-
-  // @include tablets {
-  //   font-size: 31px;
-  // }
-
-  // @include phones {
-  //   display: none;
-  // }
 }
 
 @keyframes blink {
