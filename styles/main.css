@@ -1054,15 +1054,21 @@ video {
   @media screen and (max-width: 480px) {
     .portfolio__header {
       font-size: 20px; } }
+  .portfolio__header--other {
+    white-space: normal; }
 
-.portfolio__content-header-img {
+.portfolio__header-cover {
+  display: flex;
+  flex-shrink: 0; }
+
+.portfolio__header-img {
   width: 30px;
   height: 30px; }
   @media screen and (max-width: 1024px) {
-    .portfolio__content-header-img {
+    .portfolio__header-img {
       width: 29px;
       height: 29px; } }
-  .portfolio__content-header-img:hover {
+  .portfolio__header-img:hover {
     opacity: 80%;
     transition: 0.3s; }
 
