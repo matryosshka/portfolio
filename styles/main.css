@@ -1054,8 +1054,9 @@ video {
   @media screen and (max-width: 480px) {
     .portfolio__header {
       font-size: 20px; } }
-  .portfolio__header--other {
-    white-space: normal; }
+  @media screen and (max-width: 480px) {
+    .portfolio__header--other {
+      white-space: normal; } }
 
 .portfolio__header-cover {
   display: flex;

@@ -100,8 +100,10 @@
     }
 
     &--other {
+      @include phones {
       white-space: normal;
     }
+  }
 }
 
 .portfolio__header-cover {
